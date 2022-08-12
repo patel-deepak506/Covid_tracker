@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+    <!-- Primary Meta Tags -->
+  <title>CovidTracker</title>
+  <meta name="title" content="CovidTracker">
+  <meta name="description" content="This website is made for the dealy checking covid-19 cases . In this website you can able to check graph also.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hungry-davinci-0da185.netlify.app/">
+  <meta property="og:title" content="CovidTracker">
+  <meta property="og:description" content="This website is made for the dealy checking covid-19 cases . In this website you can able to check graph also.">
+  <meta property="og:image" content="https://i.postimg.cc/X7WV7DcR/covidimage.jpg' border='0' alt='covidimage">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://hungry-davinci-0da185.netlify.app/">
+  <meta property="twitter:title" content="CovidTracker">
+  <meta property="twitter:description" content="This website is made for the dealy checking covid-19 cases . In this website you can able to check graph also.">
+  <meta property="twitter:image" content="https://i.postimg.cc/X7WV7DcR/covidimage.jpg' border='0' alt='covidimage">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <section class="background-section signup-background d-flex justify-content-center align-items-center ">
+    <form  class="bg-light p-4 mb-3  signup-form ">
+      <h4 class="text-center mb-4">User SignUp Form</h4>
+      <div class="d-flex justify-content-between signup-data">
+        <div class="form-group mb-3">
+          <label for="firstname">FirstName</label>
+          <input type="text" class="form-control" id="firstname"
+            placeholder="FirstName" value="" required >
+        </div> &emsp; &emsp;
+        <div class="form-group mb-3 ">
+          <label for="lastname">LastName</label>
+          <input type="text" class="form-control" id="lastname"
+            placeholder="LastName" value="" required>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between  signup-data">
+        <div class="form-group mb-3">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email"
+          placeholder="Enter email" value=" " required >
+        </div>
+        <div class="form-group mb-3">
+          <label for="pac-input">Address</label>
+          <input id="pac-input" class="form-control" type="text" placeholder="address" 
+          value="" required/>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between signup-data ">
+        <div class="form-group mb-3">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password"
+          placeholder="Password"  value="" required >
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="conformpassword"> Conform Password</label>
+          <input type="password" class="form-control" id="conformpassword"
+          placeholder="Conform Password" value="" required >
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between signup-data">
+        <div class="form-group mb-3">
+          <label for="dob">Date-Of-Birth</label>
+          <input type="date" class="form-control" id="dob"
+            placeholder="DOB" value="2000-07-22" >
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="phone">Phone No. :</label><br>
+          <input id="phone" name="phone" type="tel" required />
+          <span id="valid-msg" class="hide">Valid ..</span>
+          <span id="error-msg" class="hide"></span>
+        </div>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="profilePicture">Profile Picture</label>
+        <input type="file" class="form-control" id="profilePicture"
+        placeholder="Choose-file" value="" >
+      </div>
+      <button type="submit"  id="submitButton" class="btn btn-primary">Submit</button>
+      
+    </form>
+
+  </section>
+
+  <!-- Javascripct link -->
+  <script src="js/signup.js"></script>
+
+<!-- Autolocation link -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDN9vfYnKn3W09icpohL31TmnDlW9q29I&callback=initAutocomplete&libraries=places&v=weekly"
+  async
+  ></script>
+<!-- International phoneno  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="js/itel.js"></script>
+
+</body>
+</html>
